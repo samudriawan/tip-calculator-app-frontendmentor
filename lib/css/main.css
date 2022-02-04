@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  max-width: 1440px;
+  min-height: 100%;
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+}
+
+.wrapper {
+  position: relative;
+  background-color: white;
+  border-radius: 1em;
+}
+
+form {
+  position: relative;
+  color: #5e7a7d;
+}
+form input[type=text] {
+  position: relative;
+  height: 40px;
+  background-color: #f4fafa;
+  color: #00494d;
+  font-size: 24px;
+}
+form input[type=text]:hover, form input[type=text]:focus {
+  background-color: #c5e4e7;
+  outline: 3px solid #7f9c9f;
+}
+form .input-bill {
+  position: relative;
+}
+form .input-bill .input-bill_icon {
+  position: absolute;
+  height: 1.5em;
+  transform: translate(-1.5em, 2.5em);
+  z-index: 1;
+}
+form .input-bill .input-bill_text {
+  cursor: pointer;
+}
+form fieldset legend {
+  font-size: inherit;
+}
+form fieldset li {
+  position: relative;
+  height: 45px;
+  border-radius: 4px;
+}
+form fieldset li .input-radio-btn {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+form fieldset li .input-radio-btn:checked + .tip-label, form fieldset li .input-radio-btn:hover + .tip-label {
+  background-color: #26c0ab;
+  color: #00494d;
+  transition: ease 200ms;
+}
+form fieldset li .tip-label {
+  color: white;
+  background-color: #00494d;
+  border-radius: 4px;
+  z-index: 1;
+  transition: ease 200ms;
+}
+form fieldset li .input_tip_custom {
+  font-size: 1.4rem;
+  cursor: pointer;
+  z-index: 1;
+}
+form fieldset li .input_tip_custom:focus {
+  cursor: text;
+}
+form .input-person {
+  position: relative;
+}
+form .input-person::after {
+  content: url(../../images/icon-person.svg);
+  position: absolute;
+  top: 2.55em;
+  left: 1em;
+}
+form .input-person .input-person_field {
+  cursor: pointer;
+}
+
+.error {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #d68577;
+}
+
+.tips-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(autofit, 1fr);
+  gap: 1em;
+  align-items: center;
+}
+
+.result {
+  background-color: #00494d;
+  border-radius: 1em;
+}
+.result .result-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1em;
+  align-items: center;
+}
+.result .result-list > li:last-child {
+  grid-column: 1/-1;
+  height: 3em;
+}
+.result .result_label {
+  color: white;
+  line-height: 1.3;
+}
+.result .result_label span {
+  font-size: 0.8rem;
+  color: #7f9c9f;
+}
+.result .result_amount {
+  font-size: 2.5rem;
+  color: #26c0ab;
+}
+.result .reset {
+  font-size: 1.5rem;
+  color: #00494d;
+  background-color: #26c0ab;
+}
+.result .reset:hover {
+  mix-blend-mode: normal;
+}
+.result .reset:disabled {
+  mix-blend-mode: overlay;
+}
+
+.attribution {
+  font-size: 11px;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 900px;
+  }
+
+  .tips-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(autofit, 1fr);
+    gap: 1em;
+    align-items: center;
+  }
+
+  .reset {
+    margin-top: 5em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
