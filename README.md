@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-[Solution URL]() |
-[Live Site URL]() |
+[Solution URL](https://www.frontendmentor.io/solutions/mobilefirst-with-sass-and-bootstrap-4UdVmiKPa) |
+[Live Site URL](https://samudriawan.github.io/tip-calculator-app-frontendmentor/) |
 [Challenge](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
 
 ## My process
